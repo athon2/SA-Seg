@@ -1,0 +1,17 @@
+task: TreeSeg
+
+patch_size: [128, 128, 128]
+batch_size: 2
+num_epochs: 200
+iters_train: 250
+iters_val: 50
+oversample: 0.33
+num_processes: 12
+init_num_channels: 32
+do_ds: false 
+amp: true 
+win_max: 600
+win_min: -1000
+metrics_str: TD,BD,DSC,Pre
+label_dir: /data/datasets
+npy_dir: ./
